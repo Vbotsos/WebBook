@@ -1,0 +1,26 @@
+<div class="topnav">
+  <a class="active" href="./index.html">Search</a>
+  <a id="MyList" href="http://localhost:8080/MyList">MyList</a>
+  <a href="#about">About</a>
+</div>
+<div id="container">
+  <h1>{{Title}}</h1>
+  <input type="text" id="filter" placeholder="Search" />
+  <ul id="list-group">
+    {{#each list}}
+      <form action="/MyList/{{this.id}}" method="POST">
+        <li class="list-group-item"><a href="#">Title:
+            {{this.title}}
+            Author:
+            {{this.author}}
+            ID:
+            {{this.id}}
+            <input type="submit" value="Edit" class="btnedit" />
+          </a></li>
+      </form>
+    {{/each}}
+  </ul>
+</div>
+<footer id="footer">
+  <p>BOOK REPOSITORY BY BILL BOTSOS</p>
+</footer>

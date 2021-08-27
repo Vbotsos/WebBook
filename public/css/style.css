@@ -1,0 +1,164 @@
+body {
+  background-image: url("1.jpg");
+}
+
+#grid {
+  display: grid;
+}
+
+#h1 {
+  text-align: center;
+  grid-area: header;
+  text-shadow: 1px 1px 1px #666, 3px 3px 8px rgb(255, 255, 255);
+  font-size: 40px;
+}
+#search {
+  display: grid;
+  row-gap: 15px;
+  grid-template-areas:
+    "header  header"
+    "title   author";
+  border: 5px;
+  border-style: groove;
+  border-color: rgb(122, 97, 49);
+}
+#search-form-title {
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 5px;
+}
+#search-form-author {
+  grid-area: author;
+  justify-self: center;
+  align-self: end;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #013522;
+  color: white;
+}
+
+#reset {
+  visibility: hidden;
+}
+.btn {
+  background-color: rgb(97, 95, 93);
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  border-radius: 3px;
+  padding: 4px;
+
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+.btn:focus {
+  background-color: darkred;
+}
+#reset {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+#searchContainer {
+  background-color: #013522;
+  margin: 20px;
+}
+#outTitles {
+  color: white;
+}
+#outAuthor {
+  color: white;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+#getTitle {
+  box-shadow: 3px 3px 0px 0px #899599;
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #397382;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 2px 2px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+}
+#getTitle:hover {
+  background-color: #bab1ba;
+}
+#getTitle:active {
+  position: relative;
+  top: 1px;
+}
+#getAuthor {
+  box-shadow: 3px 3px 0px 0px #899599;
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #397382;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 2px 2px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+}
+#getAuthor:hover {
+  background-color: #bab1ba;
+}
+#getAuthor:active {
+  position: relative;
+  top: 1px;
+}
+#searchAuthor {
+  margin-bottom: 5px;
+}
+#searchTitle {
+}
+#author {
+  box-sizing: border-box;
+  border-color: #535353;
+}
+#title {
+  box-sizing: border-box;
+  border-color: #535353;
+}

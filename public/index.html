@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookList</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="#" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="./index.html">Search</a>
+      <a id="MyList" href="http://localhost:8080/MyList">MyList</a>
+      <a href="#about">About</a>
+    </div>
+    <div id="grid">
+      <div id="flex-header"></div>
+
+      <div id="searchContainer">
+        <div id="search">
+          <h1 id="h1">BOOK REPOSITORY</h1>
+          <form id="search-form-title">
+            <div id="searchTitle">
+              <!-- <button type="button" id="reset">/?</button> -->
+              <button type="button" id="reset" style="font-size: 24px">
+                <i class="fa fa-undo"></i>
+              </button>
+              <input type="text" id="title" placeholder="Title" />
+              <button type="submit" id="getTitle">Search Title</button>
+              <div id="outTitles"></div>
+            </div>
+          </form>
+          <form id="search-form-author">
+            <div id="searchAuthor">
+              <input type="text" id="author" placeholder="Author" />
+              <button type="submit" id="getAuthor">Search Author</button>
+              <div id="outAuthor"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <p>BOOK REPOSITORY BY BILL BOTSOS</p>
+    </footer>
+
+    <script id="template" type="text/x-handlebars-template">
+      <h2>Titles</h2>
+      {{#each title}}
+        <!-- <li><h4>Title:</h4>{{titleweb}}<h4>Author:</h4>{{authorweb}}</li> -->
+        <p id="table">
+          <a id="ele">Title:
+            <span class="title">{{titleweb}}</span>
+            author:
+            <span class="author">{{authorweb}}</span>
+            Code:
+            <span class="isbn">{{isbn}}</span>
+          </a>
+          <a href="#" class="btn">+</a>
+        </p>
+      {{/each}}
+    </script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

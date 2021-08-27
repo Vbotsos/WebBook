@@ -1,0 +1,110 @@
+body {
+  background-image: url("1.jpg");
+}
+#h1 {
+  text-align: center;
+  text-shadow: 1px 1px 1px #666, 3px 3px 8px rgb(255, 255, 255);
+  font-size: 40px;
+}
+#container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #013522;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgba(255, 255, 255, 0.74), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.form-style-1 {
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  list-style-type: none;
+}
+.form-style-1 li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.form-style-1 label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+.label {
+  font-size: 20px;
+}
+
+.form-style-1 .field-title {
+  width: 100%;
+}
+
+.form-style-1 .field-author {
+  width: 100%;
+}
+
+.form-style-1 .field-rate {
+  height: 50px;
+  width: 100%;
+}
+.form-style-1 .btn-delete {
+  background: #ff0000;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.form-style-1 .btn-save {
+  background: #047e9c;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.form-style-1 .btn-save:hover {
+  background: #064453;
+  box-shadow: none;
+}
+.form-style-1 .btn-delete:hover {
+  background: #8f1111;
+  box-shadow: none;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #013522;
+  color: white;
+}

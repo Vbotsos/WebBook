@@ -1,0 +1,57 @@
+ <div class="topnav">
+      <a class="active" href="./index.html">Search</a>
+      <a id="MyList" href="http://localhost:8080/MyList">MyList</a>
+      <a href="#about">About</a>
+    </div>
+<div id="container">
+<h1 id="h1">{{Title}}</h1>
+
+      <form action="/MyList/{{book.id}}/edit" method="POST">
+        <ul class="form-style-1">
+         
+           <li>
+            <label class="label">Title: </label></li>
+            <li>
+            <input
+            type="text"
+            value=" {{book.title}}"
+            name="title"
+            class="field-title"
+            />
+          </li>
+        
+          <li>
+          <label class="label">Author: </label></li>
+          <li>
+          <input
+            type="text"
+            value="{{book.author}}"
+            name="author"
+            class="field-author"
+          /></li>
+      
+          <li>
+          <label class="label">ID: {{book.id}}</label>
+          </li>
+        
+      
+          <li><label class="label">Rate: </label></li>
+          <li>
+          <input type="text" name="rate" placeholder="rate" class="field-rate" />
+          </li>
+        
+        <li>
+        <input type="submit" value="Save" class="btn-save" name="save" />
+        </li>
+      </form>
+      <form action="/MyList/{{book.id}}/delete" method="post">
+      <li>
+        <input type="submit" value="Delete" class="btn-delete" name="delete" />
+        </li>
+      </form>
+    
+  </ul>
+</div>
+ <footer id="footer">
+      <p>BOOK REPOSITORY BY BILL BOTSOS</p>
+    </footer>
